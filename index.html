@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Software Engineer showcasing projects, skills, and experience.">
+    <title>Software Engineer Portfolio</title>
+
+    <!-- Google Fonts for Pixel Art & Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Inter:wght@400;600;700&family=Fira+Code:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Accessible Skip to Content Link -->
+    <a href="#main-content" class="skip-to-content">Skip to Main Content</a>
+
+    <!-- ========================================================= -->
+    <!-- MOBILE TOP BAR (VISIBLE ON SMALL SCREENS ONLY)            -->
+    <!-- ========================================================= -->
+    <header id="mobile-header" class="mobile-header">
+        <a href="#hero" class="mobile-logo">&lt;PRAJWAL.DEV /&gt;</a>
+        <button id="mobile-menu-toggle" class="pixel-menu-btn" aria-label="Toggle Navigation Menu"
+            aria-controls="sidebar-nav" aria-expanded="false">
+            <span class="pixel-menu-icon" aria-hidden="true">&#9776;</span>
+            <span class="pixel-menu-text">MENU</span>
+        </button>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- VERTICAL NAVIGATION BAR (LEFT SIDE OF SCREEN)             -->
+    <!-- ========================================================= -->
+    <aside id="sidebar-nav" class="pixel-sidebar" aria-label="Primary Navigation">
+        <!-- Sidebar Brand / Logo -->
+        <div class="sidebar-header">
+            <a href="#hero" class="sidebar-logo">&lt;PRAJWAL.DEV /&gt;</a>
+            <div class="sidebar-status-tag">
+                <span class="status-dot"></span>
+                <span>STATUS: READY</span>
+            </div>
+        </div>
+
+        <!-- Sidebar Player HUD Mini Card -->
+        <div class="sidebar-player-hud">
+            <div class="hud-avatar">
+                <img src="praju.jpeg" alt="Prajwal Profile Icon" loading="lazy">
+            </div>
+            <div class="hud-meta">
+                <span class="hud-name">PRAJWAL</span>
+                <span class="hud-role">SDE // LVL 99</span>
+            </div>
+        </div>
+
+        <!-- Primary Vertical Navigation Links -->
+        <nav class="sidebar-nav-container">
+            <ul class="sidebar-nav-list" role="list">
+                <li class="nav-item">
+                    <a href="#hero" class="nav-link active" data-section="hero" aria-current="page">
+                        <span class="nav-indicator" aria-hidden="true">&#9658;</span>
+                        <span class="nav-icon" aria-hidden="true">&#9650;</span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">
+                        <span class="nav-indicator" aria-hidden="true">&#9658;</span>
+                        <span class="nav-icon" aria-hidden="true">&#9829;</span>
+                        <span class="nav-text">About Me</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">
+                        <span class="nav-indicator" aria-hidden="true">&#9658;</span>
+                        <span class="nav-icon" aria-hidden="true">&#9889;</span>
+                        <span class="nav-text">Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#timeline" class="nav-link" data-section="timeline">
+                        <span class="nav-indicator" aria-hidden="true">&#9658;</span>
+                        <span class="nav-icon" aria-hidden="true">&#9203;</span>
+                        <span class="nav-text">Timeline</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">
+                        <span class="nav-indicator" aria-hidden="true">&#9658;</span>
+                        <span class="nav-icon" aria-hidden="true">&#9876;</span>
+                        <span class="nav-text">Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link" data-section="testimonials">
+                        <span class="nav-indicator" aria-hidden="true">&#9658;</span>
+                        <span class="nav-icon" aria-hidden="true">&#9733;</span>
+                        <span class="nav-text">Testimonials</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#chat" class="nav-link" data-section="chat">
+                        <span class="nav-indicator" aria-hidden="true">&#9658;</span>
+                        <span class="nav-icon" aria-hidden="true">&#128172;</span>
+                        <span class="nav-text">Chat</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <span class="nav-indicator" aria-hidden="true">&#9658;</span>
+                        <span class="nav-icon" aria-hidden="true">&#9993;</span>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar Footer with Theme Toggle -->
+        <div class="sidebar-footer">
+            <div class="theme-toggle-container">
+                <button id="theme-toggle" type="button" aria-label="Toggle Night Mode" class="sidebar-theme-btn">
+                    <span class="theme-icon light-icon" aria-hidden="true">&#9788;</span>
+                    <span class="theme-icon dark-icon" aria-hidden="true">&#9790;</span>
+                    <span class="theme-text">Night Mode</span>
+                </button>
+            </div>
+            <div class="sidebar-credit">&copy; 2026 PRAJWAL.DEV</div>
+        </div>
+    </aside>
+
+    <!-- Mobile Drawer Overlay Backdrop -->
+    <div id="sidebar-backdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+    <!-- ========================================================= -->
+    <!-- MAIN CONTENT                                              -->
+    <!-- ========================================================= -->
+    <main id="main-content">
+
+        <!-- ===================================================== -->
+        <!-- 1. HERO SECTION (PIXEL ART STYLE DESIGN)              -->
+        <!-- ===================================================== -->
+        <section id="hero" aria-labelledby="hero-title">
+            <div class="hero-wrapper">
+
+                <!-- Left Column: Retro RPG Dialogue & Welcome Message -->
+                <div class="hero-dialog-box">
+                    <div class="dialog-header">
+                        <div class="system-status">
+                            <span class="status-dot"></span>
+                            <span>PLAYER 1 READY</span>
+                        </div>
+                        <span class="system-badge">8-BIT EDITION</span>
+                    </div>
+
+                    <p class="hero-greeting">&#x1F579; Welcome To My World</p>
+                    <h1 id="hero-title" class="hero-main-title">
+                        HELLO, I'M PRAJWAL<span class="cursor-blink"></span>
+                    </h1>
+
+                    <p class="hero-tagline">
+                        [ Full-Stack Software Engineer &amp; Creative Problem Solver ]
+                    </p>
+
+                    <p class="hero-bio">
+                        Engineering scalable web applications, robust backends, and interactive digital experiences.
+                        Combining modern architectural best practices with timeless retro pixel craft.
+                    </p>
+
+                    <!-- RPG Stats Panel -->
+                    <div class="hero-stats-bar">
+                        <div class="stat-item">
+                            <span class="stat-label">EXP / LEVEL</span>
+                            <div class="stat-gauge">
+                                <div class="gauge-fill gauge-hp"></div>
+                            </div>
+                            <span class="stat-value">LVL 99 DEVELOPER</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">ENERGY / MANA</span>
+                            <div class="stat-gauge">
+                                <div class="gauge-fill gauge-mp"></div>
+                            </div>
+                            <span class="stat-value">COFFEE 98%</span>
+                        </div>
+                    </div>
+
+                    <!-- Pixel Art Interactive Action Buttons -->
+                    <div class="hero-actions">
+                        <a href="#projects" class="pixel-btn pixel-btn-primary">
+                            <span>&#9658;</span> Start Quest
+                        </a>
+                        <a href="#contact" class="pixel-btn pixel-btn-secondary">
+                            <span>&#9993;</span> Co-Op / Contact
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Retro Pixel Character Frame with Provided Image -->
+                <div class="hero-character-card">
+                    <div class="character-frame">
+                        <div class="character-header-badge">CHARACTER SELECT</div>
+                        <div class="character-image-container">
+                            <img src="praju.jpeg" alt="Prajwal - Software Engineer" loading="eager">
+                            <span class="character-level-badge">CLASS: SDE</span>
+                        </div>
+                        <div class="character-caption">
+                            <span class="character-name">PRAJWAL</span>
+                            <span class="character-role">FULL-STACK ENGINEER</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- 2. ABOUT SECTION                                      -->
+        <!-- ===================================================== -->
+        <section id="about" aria-labelledby="about-title">
+            <!-- PLACEHOLDER: Bio, background story, personal philosophy, highlights -->
+            <h2 id="about-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    <!-- Insert paragraph introducing background, education, and career journey -->
+                    Passionate software engineer with a track record of turning complex problems into clean, testable,
+                    and maintainable software.
+                </p>
+                <div class="about-highlights">
+                    <!-- Placeholder: quick stat cards (years of experience, completed projects, etc.) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- 3. SKILLS SECTION                                     -->
+        <!-- ===================================================== -->
+        <section id="skills" aria-labelledby="skills-title">
+            <!-- PLACEHOLDER: Categorized technical skills, tools, frameworks, and proficiencies -->
+            <h2 id="skills-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Category: Languages -->
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>JavaScript / TypeScript</li>
+                        <li>Python</li>
+                        <li>Java / C++</li>
+                        <li>HTML5 &amp; CSS3</li>
+                    </ul>
+                </div>
+
+                <!-- Category: Frameworks & Libraries -->
+                <div class="skill-category">
+                    <h3>Frameworks &amp; Libraries</h3>
+                    <ul>
+                        <li>React / Next.js</li>
+                        <li>Node.js / Express</li>
+                        <li>TailwindCSS</li>
+                    </ul>
+                </div>
+
+                <!-- Category: Tools & Platforms -->
+                <div class="skill-category">
+                    <h3>Tools &amp; Infrastructure</h3>
+                    <ul>
+                        <li>Git &amp; GitHub</li>
+                        <li>Docker</li>
+                        <li>AWS / Cloud Services</li>
+                        <li>PostgreSQL / MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- 4. TIMELINE SECTION (Experience & Education)          -->
+        <!-- ===================================================== -->
+        <section id="timeline" aria-labelledby="timeline-title">
+            <!-- PLACEHOLDER: Chronological work experience, internships, and education history -->
+            <h2 id="timeline-title">Experience &amp; Education</h2>
+            <div class="timeline-container">
+                <!-- Timeline item: Job 1 -->
+                <article class="timeline-item">
+                    <span class="timeline-date">2024 - Present</span>
+                    <h3 class="timeline-role">Software Engineer</h3>
+                    <p class="timeline-company">Company Name</p>
+                    <p class="timeline-desc">
+                        <!-- Key responsibilities and accomplishments -->
+                        Developed and maintained microservices, optimized database queries, and collaborated with
+                        cross-functional teams.
+                    </p>
+                </article>
+
+                <!-- Timeline item: Job 2 / Internship -->
+                <article class="timeline-item">
+                    <span class="timeline-date">2022 - 2024</span>
+                    <h3 class="timeline-role">Junior Developer</h3>
+                    <p class="timeline-company">Previous Company</p>
+                    <p class="timeline-desc">
+                        <!-- Key responsibilities and accomplishments -->
+                        Built responsive frontend UI components and integrated RESTful APIs.
+                    </p>
+                </article>
+
+                <!-- Timeline item: Degree / Education -->
+                <article class="timeline-item">
+                    <span class="timeline-date">2018 - 2022</span>
+                    <h3 class="timeline-role">B.S. in Computer Science</h3>
+                    <p class="timeline-company">University Name</p>
+                    <p class="timeline-desc">
+                        <!-- Relevant coursework or achievements -->
+                        Focused on Data Structures, Algorithms, Software Engineering, and Computer Networks.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- 5. PROJECTS SECTION                                   -->
+        <!-- ===================================================== -->
+        <section id="projects" aria-labelledby="projects-title">
+            <!-- PLACEHOLDER: Featured projects with thumbnails, tech stack tags, live demos & repository links -->
+            <h2 id="projects-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <article class="project-card">
+                    <div class="project-thumbnail">
+                        <!-- Placeholder for project preview image -->
+                        <div class="thumbnail-placeholder">[Project Image Preview]</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project One Title</h3>
+                        <p>Short description of what the project does, key challenges solved, and results achieved.</p>
+                        <ul class="project-tags">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card">
+                    <div class="project-thumbnail">
+                        <!-- Placeholder for project preview image -->
+                        <div class="thumbnail-placeholder">[Project Image Preview]</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Two Title</h3>
+                        <p>Short description of what the project does, key challenges solved, and results achieved.</p>
+                        <ul class="project-tags">
+                            <li>Python</li>
+                            <li>FastAPI</li>
+                            <li>Docker</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- 6. TESTIMONIALS SECTION                               -->
+        <!-- ===================================================== -->
+        <section id="testimonials" aria-labelledby="testimonials-title">
+            <!-- PLACEHOLDER: Party member reviews, mentor recommendations, peer feedback -->
+            <h2 id="testimonials-title">Testimonials // Party Reviews</h2>
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonial-quote">
+                        "Prajwal is an incredible engineer who delivers pixel-perfect interfaces backed by robust,
+                        scalable architectures. A high-value party member in any tech squad!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <span class="author-name">Alex Morgan</span>
+                        <span class="author-role">Tech Lead @ CloudForge</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonial-quote">
+                        "Speed, creativity, and clean code. He brought fresh ideas and turned complex sprint
+                        requirements into intuitive software effortlessly."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <span class="author-name">Samantha Chen</span>
+                        <span class="author-role">Senior Product Manager</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- 7. CHAT SECTION                                       -->
+        <!-- ===================================================== -->
+        <section id="chat" aria-labelledby="chat-title">
+            <!-- PLACEHOLDER: Interactive 8-bit NPC dialog console / Live messenger -->
+            <h2 id="chat-title">Live Chat // Terminal NPC</h2>
+            <div class="chat-terminal">
+                <div class="terminal-bar">
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-title">PRAJWAL_BOT_V2.exe [READY]</span>
+                </div>
+                <div class="chat-messages" id="chat-messages-container" aria-live="polite">
+                    <div class="chat-msg bot-msg">
+                        <span class="msg-sender">[PRAJWAL-AI]:</span>
+                        <span class="msg-text">Greetings traveler! Looking to build an awesome project or discuss
+                            full-stack opportunities? Type a message or ping me below!</span>
+                    </div>
+                </div>
+                <form class="chat-input-row" id="terminal-chat-form" onsubmit="event.preventDefault();">
+                    <label for="chat-input-field" class="sr-only">Type message</label>
+                    <span class="prompt-symbol">&gt;</span>
+                    <input type="text" id="chat-input-field" class="pixel-input"
+                        placeholder="Type a message or prompt..." autocomplete="off">
+                    <button type="submit" class="pixel-btn pixel-btn-primary" id="chat-send-btn">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- 8. CONTACT SECTION                                    -->
+        <!-- ===================================================== -->
+        <section id="contact" aria-labelledby="contact-title">
+            <!-- PLACEHOLDER: Contact form, email link, and social profiles -->
+            <h2 id="contact-title">Get In Touch</h2>
+            <p>I'm currently open to new opportunities and collaborations. Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="btn btn-primary">Say Hello</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- FOOTER                                                    -->
+    <!-- ========================================================= -->
+    <footer id="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+            </ul>
+            <a href="#hero" class="back-to-top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Theme Toggle and Interactive features -->
+    <script src="script.js"></script>
+</body>
+
+</html>
